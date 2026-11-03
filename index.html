@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>EXPRESS รับส่งพัสดุ หาดใหญ่ | ส่งกระเป๋าเดินทางกลับบ้าน ใกล้สนามบินหาดใหญ่</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="ส่งกระเป๋าเดินทางจากสนามบินหาดใหญ่ ไม่ต้องแบกขึ้นเครื่อง ไม่ต้องจ่ายค่าโหลดกระเป๋า ส่งเป็นพัสดุกลับบ้านได้ที่ EXPRESS รับส่งพัสดุหน้ากองบิน 56 พร้อมส่ง Flash ไปรษณีย์ไทย KEX ดร็อป Shopee แพ็คกล่อง 2 สาขาในหาดใหญ่">
+<meta name="theme-color" content="#191919">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="th_TH">
+<meta property="og:title" content="EXPRESS หาดใหญ่ — ส่งง่าย สะดวกในที่เดียว">
+<meta property="og:description" content="ไม่ต้องแบกกระเป๋าให้หนัก ไม่ต้องจ่ายค่าโหลดแพงๆ แค่มาส่งเป็นพัสดุ แล้วไปรอรับที่บ้าน · รับส่งพัสดุหน้ากองบิน 56 ใกล้สนามบินหาดใหญ่">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='4' width='56' height='56' rx='16' fill='%23c62828'/%3E%3Cpath d='M20 44 44 20M26 20h18v18' stroke='white' stroke-width='7' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700;800&family=Prompt:wght@400;500;600;700&display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "name": "EXPRESS สาขาหน้ากองบิน 56",
+      "description": "รับส่งพัสดุ ดร็อปสินค้า แพ็คกล่อง จำหน่ายกล่องและอุปกรณ์แพ็ค รับส่งกระเป๋าเดินทาง",
+      "address": {"@type": "PostalAddress", "addressLocality": "หาดใหญ่", "addressRegion": "สงขลา", "addressCountry": "TH"},
+      "hasMap": "https://maps.app.goo.gl/YD1Tyn6CwE1GKMyf6",
+      "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "09:00", "closes": "18:00"}],
+      "telephone": "+66982659361",
+      "sameAs": ["https://www.facebook.com/share/19qYRmnnFC/", "https://lin.ee/ppyElrq"]
+    },
+    {
+      "@type": "LocalBusiness",
+      "name": "EXPRESS สาขาหน้าค่ายเสนาณรงค์",
+      "description": "รับส่งพัสดุ ดร็อปสินค้า แพ็คกล่อง จำหน่ายกล่องและอุปกรณ์แพ็ค",
+      "address": {"@type": "PostalAddress", "addressLocality": "หาดใหญ่", "addressRegion": "สงขลา", "addressCountry": "TH"},
+      "hasMap": "https://maps.app.goo.gl/h5LuZYSoDWpu4mN49",
+      "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "09:00", "closes": "19:00"}],
+      "telephone": "+66982659361",
+      "sameAs": ["https://www.facebook.com/share/19GhujedaA/", "https://lin.ee/ppyElrq"]
+    }
+  ]
+}
+</script>
+<style>
+/* Layout: sticky header → waybill hero → banded sections on one 1180px column; single light theme (brand look) */
+:root{
+  --ink:#191919;          /* brand black */
+  --red:#e53935;          /* brand red, large shapes only */
+  --red-ink:#c62828;      /* red for text and buttons (AA on white) */
+  --yellow:#ffd12d;
+  --orange:#ff8a28;
+  --kraft:#c9935a;        /* parcel box */
+  --kraft-hi:#d9a86c;
+  --paper:#ffffff;
+  --sand:#faf8f4;         /* alternate band */
+  --cream:#fff9e8;
+  --text:#222222;
+  --muted:#5e5a55;
+  --line:#ebe5dc;
+  --open:#1b7a3a;  --open-bg:#e5f5ea;
+  --soon:#8a5a00;  --soon-bg:#fff1cc;
+  --closed:#9b2c2c; --closed-bg:#fde8e8;
+  --display:Kanit,"Noto Sans Thai",Tahoma,sans-serif;
+  --body:Prompt,"Noto Sans Thai",Tahoma,system-ui,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --shadow:0 16px 55px rgba(34,24,12,.09);
+  --gutter:24px;
+  --header-h:72px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 16px)}
+body{margin:0;background:var(--paper);color:var(--text);font:15px/1.7 var(--body);-webkit-text-size-adjust:100%}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:40;background:var(--paper)}
+a{color:inherit;text-decoration:none}
+button,input{font:inherit;color:inherit}
+button{cursor:pointer}
+img{max-width:100%}
+[hidden]{display:none!important}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:6px}
+.ico{width:1.15em;height:1.15em;flex:none;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:1180px;margin-inline:auto;padding-left:max(var(--gutter),env(safe-area-inset-left,0px));padding-right:max(var(--gutter),env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);line-height:1.17;text-wrap:balance;margin:0}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:11px 20px;border-radius:13px;font-weight:700;font-size:14px;line-height:1.3;border:1.5px solid transparent;transition:transform .2s,background-color .2s,box-shadow .2s;text-align:center}
+.btn:hover{transform:translateY(-2px)}
+.btn-dark{background:var(--ink);color:var(--paper)}
+.btn-red{background:var(--red-ink);color:var(--paper);box-shadow:0 9px 21px rgba(198,40,40,.22)}
+.btn-red:hover{background:#ad2121}
+.btn-light{background:var(--paper);border-color:#e3dacd;color:var(--ink)}
+.btn-light:hover{border-color:var(--ink)}
+.btn-yellow{background:var(--yellow);color:var(--ink)}
+.btn-ghost{background:transparent;border-color:rgba(255,255,255,.55);color:var(--paper)}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+
+/* header */
+.header{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{min-height:var(--header-h);display:flex;justify-content:space-between;align-items:center;gap:18px}
+.wordmark{display:inline-flex;align-items:center;gap:11px;color:var(--ink);min-height:44px}
+.wordmark i{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--red-ink);color:var(--paper);transform:rotate(-7deg)}
+.wordmark i .ico{width:22px;height:22px;stroke-width:3}
+.wm-text{display:flex;flex-direction:column;gap:3px}
+.wm-name{font:800 29px/.9 var(--display);letter-spacing:-1.2px;color:var(--ink)}
+.wm-sub{font:600 12.5px/1 var(--display);letter-spacing:.4px;color:var(--red-ink);white-space:nowrap}
+.navlinks{display:flex;align-items:center;gap:22px;font-weight:600;font-size:13px}
+.navlinks a{padding-block:10px}
+.navlinks a:hover{color:var(--red-ink)}
+.menu{display:none;background:transparent;border:0;width:46px;height:46px;border-radius:12px;align-items:center;justify-content:center}
+.menu .ico{width:26px;height:26px}
+.menu .i-close{display:none}
+.menu[aria-expanded="true"] .i-open{display:none}
+.menu[aria-expanded="true"] .i-close{display:block}
+
+/* hero */
+.hero{background:radial-gradient(circle at 78% 20%,#ffeb9c 0,transparent 33%),linear-gradient(115deg,var(--paper) 5%,var(--cream) 96%);overflow:hidden}
+.hero .wrap{padding-block:72px 96px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:48px}
+.hero-grid>*{min-width:0}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;background:var(--paper);border:1px solid #f0dfcb;border-radius:50px;padding:7px 15px;font-weight:700;color:#a83420;font-size:12px;letter-spacing:.6px}
+.eyebrow::before{content:"";background:var(--orange);width:9px;height:9px;border-radius:50%}
+h1{font-size:clamp(46px,6vw,78px);letter-spacing:-2px;margin:20px 0 18px}
+h1 .red{color:var(--red-ink)}
+.hero p.lead{max-width:540px;color:var(--muted);font-size:16px;margin:0}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.highlights{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 0;padding:0;list-style:none}
+.highlights li{display:inline-flex;align-items:center;gap:6px;background:var(--paper);border-radius:30px;border:1px solid #eee4d5;padding:5px 12px;font-size:12px;font-weight:600}
+.highlights .ico{width:14px;height:14px;color:var(--open);stroke-width:3}
+
+/* hero art: a parcel box with a live waybill */
+.hero-art{position:relative;min-height:470px;display:grid;place-items:center}
+.blob{position:absolute;inset:18px 0 6px 30px;background:linear-gradient(135deg,var(--yellow),var(--orange));border-radius:35% 64% 35% 61%;transform:rotate(-9deg)}
+.parcel{position:relative;width:min(100%,430px);aspect-ratio:1/.96;max-width:100%;background:linear-gradient(160deg,var(--kraft-hi),var(--kraft) 70%);border-radius:18px;box-shadow:0 30px 60px rgba(89,44,30,.25),inset 0 -14px 0 rgba(0,0,0,.06);transform:rotate(3deg);display:grid;place-items:center;padding:34px 26px 26px}
+.parcel::before{content:"";position:absolute;left:0;right:0;top:0;height:40px;background:repeating-linear-gradient(90deg,rgba(255,255,255,.18) 0 22px,rgba(255,255,255,.08) 22px 44px);border-radius:18px 18px 0 0;border-bottom:2px dashed rgba(25,25,25,.18)}
+.waybill{position:relative;width:100%;background:var(--paper);border-radius:10px;padding:16px 18px 14px;transform:rotate(-5deg);box-shadow:0 10px 26px rgba(40,24,10,.22);font-size:12px}
+.wb-head{display:flex;justify-content:space-between;align-items:center;gap:10px;border-bottom:2px solid var(--ink);padding-bottom:8px}
+.wb-logo{font:800 22px/1 var(--display);letter-spacing:-1px}
+.wb-code{font:700 11px/1.2 var(--mono);letter-spacing:1px;text-align:right}
+.wb-barcode{height:46px;margin:10px 0 2px;background:repeating-linear-gradient(90deg,var(--ink) 0 2px,transparent 2px 5px,var(--ink) 5px 6px,transparent 6px 8px,var(--ink) 8px 11px,transparent 11px 13px,var(--ink) 13px 14px,transparent 14px 17px)}
+.wb-no{font:600 11px/1.4 var(--mono);letter-spacing:2px;text-align:center;color:var(--muted)}
+.wb-rows{margin:10px 0 0;display:grid;gap:4px}
+.wb-rows div{display:grid;grid-template-columns:44px 1fr;gap:8px;align-items:baseline}
+.wb-rows dt{font:700 10px/1.6 var(--mono);letter-spacing:1px;color:var(--muted)}
+.wb-rows dd{margin:0;font-weight:600}
+.wb-status{list-style:none;margin:10px 0 0;padding:10px 0 0;border-top:1.5px dashed #d9d2c6;display:grid;gap:6px}
+.wb-status li{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.wb-status b{font-weight:700}
+.dot{width:9px;height:9px;border-radius:50%;background:#bdb6ab;flex:none}
+.dot[data-state="open"]{background:var(--open)}
+.dot[data-state="soon"]{background:#d99400}
+.dot[data-state="closed"]{background:var(--closed)}
+.wb-status span[data-status]{color:var(--muted);margin-left:auto}
+.stamp{position:absolute;right:8px;top:10px;z-index:2;transform:rotate(9deg);background:var(--ink);color:var(--paper);font:700 12px/1 var(--display);letter-spacing:.5px;padding:9px 12px;border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,.18)}
+.sticker{position:absolute;left:0;bottom:36px;transform:rotate(-6deg);background:var(--yellow);color:var(--ink);border-radius:14px;padding:10px 15px;box-shadow:0 12px 30px rgba(61,42,33,.18);font-weight:700;font-size:13.5px;line-height:1.35;display:flex;align-items:center;gap:10px;transition:transform .2s}
+.sticker:hover{transform:rotate(-6deg) translateY(-2px)}
+.sticker .ico{color:var(--ink);width:22px;height:22px}
+
+/* carriers strip */
+.carrier-wrap{margin-top:-40px;position:relative;z-index:3}
+.carrier{background:var(--paper);box-shadow:var(--shadow);border:1px solid var(--line);padding:20px 26px;border-radius:20px;display:flex;align-items:center;gap:20px}
+.carrier-title{font-size:12px;color:var(--muted);font-weight:700;min-width:170px}
+.carrier-list{display:flex;justify-content:space-around;align-items:center;flex:1;flex-wrap:wrap;gap:12px;margin:0;padding:0;list-style:none}
+.brand{font-family:var(--display);font-weight:800;font-size:20px;display:flex;align-items:center;gap:8px}
+.brand .em{display:grid;place-items:center;border-radius:9px;width:32px;height:32px;font-size:15px}
+.brand.flash .em{background:var(--yellow)}
+.brand.post{color:#b5232d}.brand.post .em{background:#fce0e2}
+.brand.kex{color:#b4530a}.brand.kex .em{background:#ffe9d5}
+.brand.shopee{color:#b93a1f}.brand.shopee .em{background:#ffebe0}
+.smallnote{font-size:11px;color:var(--muted);text-align:center;margin:10px 0 0}
+
+/* sections */
+.section{padding-block:92px}
+.band-sand{background:var(--sand)}
+.kicker{color:var(--red-ink);font-weight:800;font-size:12px;letter-spacing:1.6px}
+.section-heading{text-align:center;max-width:680px;margin:0 auto 36px}
+.section-heading h2{font-size:clamp(32px,4vw,46px);margin:8px 0 10px}
+.section-heading p{color:var(--muted);margin:0}
+.accent{color:var(--red-ink)}
+
+/* services */
+.filterbar{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:26px}
+.filter{background:var(--paper);border:1px solid #e3dbd2;border-radius:30px;min-height:44px;padding:8px 18px;font-size:13px;font-weight:700}
+.filter[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service{border:1px solid #eee7df;border-radius:22px;padding:26px;background:var(--paper);transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column;gap:6px;min-width:0}
+.service:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.service .icon{width:54px;height:54px;border-radius:16px;background:#fff1bb;display:grid;place-items:center;color:var(--ink);margin-bottom:10px}
+.service .icon .ico{width:26px;height:26px;stroke-width:1.8}
+.service.tone-2 .icon{background:#ffe2d3}
+.service.tone-3 .icon{background:#ffe3e3}
+.service h3{font-size:23px}
+.service p{font-size:13.5px;color:var(--muted);margin:0;flex:1}
+.service .tag{margin-top:10px;font-size:12px;font-weight:700;color:var(--red-ink)}
+.service a.tag{display:inline-flex;align-items:center;gap:6px;min-height:44px;margin-bottom:-6px}
+.service a.tag:hover{text-decoration:underline}
+
+/* luggage */
+.luggage{display:grid;grid-template-columns:1.12fr .88fr;gap:44px;align-items:start}
+.luggage>*{min-width:0}
+.luggage h2{font-size:clamp(30px,3.5vw,42px);margin:8px 0 14px}
+.luggage .intro p{color:var(--muted);margin:0 0 22px;max-width:560px}
+.luggage .intro p.lug-sub{font:600 clamp(20px,2.4vw,26px)/1.35 var(--display);color:var(--ink);margin-bottom:14px;text-wrap:balance;max-width:560px}
+.luggage .intro p.lug-where{display:flex;gap:16px;align-items:center;background:var(--ink);color:var(--paper);border-radius:20px;padding:20px 24px;font:600 clamp(19px,2.2vw,24px)/1.4 var(--display);box-shadow:0 14px 30px rgba(25,25,25,.18)}
+.lug-where .ico{color:var(--yellow);width:38px;height:38px;flex:none;stroke-width:1.8}
+.lw-line{display:block;text-wrap:balance}
+.nowrap{white-space:nowrap}
+.lug-where b{color:var(--yellow);font-weight:800;white-space:nowrap}
+.luggage .intro p.note{margin:14px 0 0;font-size:12px}
+.luggage .actions{display:flex;flex-wrap:wrap;gap:10px}
+.note{font-size:12px;color:var(--muted);margin:16px 0 0}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:14px;counter-reset:step}
+.steps li{counter-increment:step;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:20px 20px 18px;position:relative}
+.steps li::before{content:counter(step);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--ink);color:var(--yellow);font:700 16px/1 var(--display);margin-bottom:12px}
+.steps h3{font-size:19px;margin-bottom:4px}
+.steps p{margin:0;font-size:13.5px;color:var(--muted)}
+
+/* tracking links */
+.track-links{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:1000px;margin:0 auto}
+.track-go{display:flex;align-items:center;gap:14px;min-height:96px;padding:18px 20px;border-radius:20px;background:var(--ink);color:var(--paper);transition:transform .2s,box-shadow .2s;min-width:0}
+.track-go:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(25,25,25,.22)}
+.tg-em{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;flex:none;font:800 18px/1 var(--display);color:var(--ink)}
+.tg-em .ico{width:24px;height:24px;stroke-width:2.2}
+.tg-em.flash{background:var(--yellow)}
+.tg-em.post{background:#fce0e2;color:#b5232d}
+.tg-em.kex{background:#ffe1c7;color:#b4530a}
+.tg-text{display:flex;flex-direction:column;min-width:0;flex:1;line-height:1.3}
+.tg-text b{font:700 18px/1.25 var(--display)}
+.tg-text span{font-size:12px;color:#cfc8bd;overflow-wrap:anywhere}
+.tg-cta{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:700;color:var(--yellow);white-space:nowrap}
+.track-fine{margin:18px auto 0;font-size:12.5px;color:var(--muted);text-align:center;max-width:620px}
+
+/* locations */
+.branch-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.branch{background:var(--paper);border:2px solid transparent;border-radius:24px;overflow:hidden;box-shadow:0 10px 35px rgba(36,27,21,.07);transition:border-color .2s,box-shadow .2s;display:flex;flex-direction:column;min-width:0}
+.branch.selected{border-color:var(--ink);box-shadow:0 15px 50px rgba(18,18,18,.13)}
+.branch-image{aspect-ratio:4/3;max-width:100%;overflow:hidden;position:relative;background:#eee}
+.branch-image img{width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block;transition:transform .3s}
+.branch:hover .branch-image img{transform:scale(1.03)}
+.branch-tag{position:absolute;top:16px;left:16px;background:var(--yellow);border-radius:25px;padding:5px 13px;font-size:12px;font-weight:800}
+.branch-info{padding:24px;display:flex;flex-direction:column;gap:12px;flex:1}
+.branch-info h3{font-size:27px}
+.branch-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.branch-area{font-size:13px;color:var(--muted);margin:0}
+.hours{display:inline-flex;align-items:center;gap:6px;background:#fff3db;border-radius:10px;padding:6px 11px;font-weight:700;color:#673b10;font-size:13px}
+.status{display:inline-flex;align-items:center;gap:6px;border-radius:10px;padding:6px 11px;font-weight:700;font-size:13px;background:#f1eee9;color:var(--muted)}
+.status[data-state="open"]{background:var(--open-bg);color:var(--open)}
+.status[data-state="soon"]{background:var(--soon-bg);color:var(--soon)}
+.status[data-state="closed"]{background:var(--closed-bg);color:var(--closed)}
+.status .dot{background:currentColor}
+.branch-perk{font-size:13px;margin:0;display:flex;gap:8px;align-items:flex-start}
+.branch-perk .ico{color:var(--red-ink);margin-top:3px}
+.branch-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:auto;padding-top:6px}
+.branch-actions .btn{font-size:13px;padding:10px 12px}
+.branch-actions .wide{grid-column:1/-1}
+.branch-pick{background:var(--paper);border:1.5px solid #e3dacd;border-radius:13px;min-height:46px;padding:10px 13px;font-size:13px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.branch-pick[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.branch-pick .ico{display:none;stroke-width:3}
+.branch-pick[aria-pressed="true"] .ico{display:block}
+.branch-bottom{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px 18px;margin-top:26px}
+.branch-bottom p{font-size:14px;color:var(--muted);margin:0}
+.branch-bottom strong{color:var(--red-ink)}
+
+/* reviews */
+.review-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:880px;margin:auto}
+.review-card{border:1px solid var(--line);border-radius:20px;padding:22px;background:var(--paper);display:flex;flex-direction:column;gap:12px}
+.review-card h3{font-size:20px}
+.review-card .row{display:flex;flex-wrap:wrap;gap:8px}
+.review-card .btn{flex:1;font-size:13px}
+
+/* faq */
+.faq{max-width:790px;margin:auto}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{font-weight:700;cursor:pointer;padding:16px 36px 16px 0;list-style:none;position:relative;min-height:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:6px;top:12px;font:600 22px/1 var(--display);color:var(--red-ink);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq p{color:var(--muted);font-size:14px;margin:0 0 18px}
+
+/* contact CTA */
+/* contact */
+.contact-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:20px;align-items:stretch}
+.contact-grid>*{min-width:0}
+.phone-card{background:linear-gradient(140deg,var(--red-ink),#b8460f);color:var(--paper);border-radius:26px;padding:32px;display:flex;flex-direction:column;gap:14px}
+.phone-label{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:14px;opacity:.95}
+.phone-number{font:800 clamp(38px,5.2vw,54px)/1.05 var(--display);letter-spacing:.5px;font-variant-numeric:tabular-nums;user-select:all;-webkit-user-select:all;width:fit-content}
+.phone-number:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}
+.phone-hours{margin:0;font-size:13px;line-height:1.6;opacity:.92}
+.phone-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:auto;padding-top:6px}
+.phone-msg{margin:0;min-height:20px;font-size:13px;color:var(--yellow);font-weight:600}
+.channels{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.channel{display:flex;align-items:center;gap:14px;min-height:76px;padding:14px 18px;background:var(--paper);border:1.5px solid var(--line);border-radius:18px;transition:border-color .2s,transform .2s}
+.channel:hover{border-color:var(--ink);transform:translateY(-2px)}
+.ch-icon{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;flex:none}
+.ch-icon .ico{width:24px;height:24px}
+.ch-icon.line{background:#e3f8ea;color:#08823a}
+.ch-icon.fb{background:#e6efff;color:#1d4fb8}
+.ch-text{display:flex;flex-direction:column;min-width:0;flex:1;line-height:1.35}
+.ch-text b{font-size:15.5px}
+.ch-text span{font-size:13px;color:var(--muted)}
+.ch-go{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:700;color:var(--red-ink);white-space:nowrap}
+
+/* footer */
+.footer{background:var(--ink);color:var(--paper)}
+.footer .wrap{padding-block:46px 22px}
+.footer-layout{display:grid;grid-template-columns:1.3fr 1fr auto;gap:30px}
+.footer-layout>*{min-width:0}
+.footer .wm-name{color:var(--paper)}
+.footer .wm-sub{color:var(--yellow)}
+.footer p,.footer li{color:#c4c4c4;font-size:12.5px}
+.footer h3{font-size:14px;color:var(--yellow);margin-bottom:8px;letter-spacing:.5px}
+.footer ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.footer-links{display:grid;gap:0;font-size:13px}
+.footer-phone{display:inline-flex;align-items:center;gap:8px;margin-top:4px;font:700 18px/1.2 var(--display);color:var(--paper);min-height:40px}
+.footer-phone .ico{color:var(--yellow)}
+.footer-links a{padding-block:8px;min-height:40px;display:flex;align-items:center}
+.footer a:hover{color:var(--yellow)}
+.copyright{border-top:1px solid rgba(255,255,255,.15);margin-top:26px;padding-top:18px;color:#a9a9a9;font-size:11.5px}
+.sticky-mobile{display:none}
+
+@media (max-width:1060px){
+  .navlinks{gap:16px}
+  .nav .btn{display:none}
+}
+@media (max-width:860px){
+  .navlinks{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:8px max(var(--gutter),env(safe-area-inset-right,0px)) 16px max(var(--gutter),env(safe-area-inset-left,0px));background:var(--paper);box-shadow:0 13px 20px rgba(0,0,0,.08);font-size:15px}
+  .navlinks a{padding-block:12px;border-bottom:1px solid var(--line)}
+  .navlinks.open{display:flex}
+  .menu{display:inline-flex}
+  .hero-grid,.luggage,.track{grid-template-columns:1fr;gap:36px}
+  .hero-art{max-width:560px;width:100%;margin-inline:auto}
+  .service-grid{grid-template-columns:repeat(2,1fr)}
+  .carrier{flex-direction:column;align-items:stretch;text-align:center}
+  .carrier-title{min-width:0}
+  .contact-grid{grid-template-columns:1fr}
+  .track-links{grid-template-columns:1fr;max-width:560px}
+  .footer-layout{grid-template-columns:1fr 1fr}
+  .footer-layout>:first-child{grid-column:1/-1}
+}
+@media (max-width:620px){
+  :root{--gutter:16px;--header-h:64px}
+  .ch-go .go-txt{display:none}
+  .wm-name{font-size:25px}
+  .wm-sub{font-size:11.5px}
+  .wordmark i{width:36px;height:36px}
+  .hero .wrap{padding-block:46px 80px}
+  h1{font-size:50px;letter-spacing:-1.5px}
+  .hero p.lead{font-size:14.5px}
+  .hero-actions .btn{flex:1 1 100%}
+  .hero-art{min-height:390px}
+  .parcel{padding:30px 16px 18px}
+  .waybill{padding:14px 14px 12px}
+  .sticker{bottom:8px;font-size:12.5px;padding:9px 12px}
+  .stamp{right:0;top:0}
+  .brand{font-size:16px}
+  .brand .em{width:28px;height:28px}
+  .section{padding-block:68px}
+  .service-grid,.branch-grid,.review-grid,.steps{grid-template-columns:1fr}
+  .track-links{grid-template-columns:1fr;gap:10px}
+  .track-go{min-height:80px;padding:14px 16px}
+  .phone-card{padding:24px 22px}
+  .luggage .intro p.lug-where{padding:18px;gap:12px}
+  .lug-where .ico{width:30px;height:30px}
+  .channel{padding:12px 14px;gap:12px}
+  .footer-layout{grid-template-columns:1fr}
+  .sticky-mobile{position:fixed;bottom:0;left:0;right:0;z-index:28;display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;background:var(--paper);padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));box-shadow:0 -5px 25px rgba(0,0,0,.12)}
+  .sticky-mobile .btn{padding:10px 6px;font-size:12.5px;min-height:46px}
+  .footer .wrap{padding-bottom:100px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-nav" viewBox="0 0 24 24"><path d="M3 11 21 3l-8 18-2-8z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 6h12v10H2zM14 9h4l3 3.5V16h-7"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17.5" cy="17.5" r="1.8"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1.2 12.5H6.2z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5z"/><path d="M3 7.5 12 12l9-4.5M12 12v9"/></symbol>
+  <symbol id="i-boxes" viewBox="0 0 24 24"><path d="M3 12h8v8H3zM13 12h8v8h-8zM8 4h8v8H8z"/></symbol>
+  <symbol id="i-tape" viewBox="0 0 24 24"><circle cx="9" cy="12" r="6"/><circle cx="9" cy="12" r="2"/><path d="M9 18h12l-2-3"/></symbol>
+  <symbol id="i-suitcase" viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="13" rx="2"/><path d="M9 7V4h6v3M9 7v13M15 7v13"/></symbol>
+  <symbol id="i-plane" viewBox="0 0 24 24"><path d="M2 14.5 22 8.5l-1-2.5-6 1.5L8.5 3 6.8 3.6l3.8 5L5.2 10l-2.4-1.6-1.3.5 1.8 3.4z"/><path d="M3 20h18"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H10l-5 4v-4H4z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M15 9V5H4v11h5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3.5h3.5l1.8 4.6-2.3 1.4a11.5 11.5 0 0 0 6.5 6.5l1.4-2.3 4.6 1.8v3.5a2 2 0 0 1-2.2 2A17 17 0 0 1 3 5.7a2 2 0 0 1 2-2.2z"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.2a5 5 0 0 1 5.5 5"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4.5 13.5H11L10 22l8.5-11.5H12z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>
+</svg>
+
+
+<header class="header">
+  <div class="wrap nav">
+    <a class="wordmark" href="#home" aria-label="EXPRESS รับส่งพัสดุ หาดใหญ่ หน้าหลัก"><i aria-hidden="true"><svg class="ico"><use href="#i-arrow"/></svg></i><span class="wm-text"><span class="wm-name">EXPRESS</span><span class="wm-sub">รับส่งพัสดุ หาดใหญ่</span></span></a>
+    <nav class="navlinks" id="navigation" aria-label="เมนูหลัก">
+      <a href="#services">บริการ</a>
+      <a href="#luggage">ส่งกระเป๋าเดินทาง</a>
+      <a href="#track">เช็คพัสดุ</a>
+      <a href="#locations">สาขา</a>
+      <a href="#reviews">รีวิว</a>
+      <a href="#faq">คำถามที่พบบ่อย</a>
+      <a href="#contact">ติดต่อ</a>
+    </nav>
+    <a class="btn btn-dark" href="tel:+66982659361"><svg class="ico"><use href="#i-phone"/></svg>098-265-9361</a>
+    <button class="menu" id="menuToggle" type="button" aria-controls="navigation" aria-expanded="false" aria-label="เปิดเมนู">
+      <svg class="ico i-open"><use href="#i-menu"/></svg><svg class="ico i-close"><use href="#i-x"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">ONE STOP PARCEL SERVICE · HAT YAI</span>
+      <h1>ส่งง่าย<br><span class="red">สะดวกในที่เดียว</span></h1>
+      <p class="lead">EXPRESS รับส่งพัสดุครบวงจร ส่งผ่าน Flash ไปรษณีย์ไทย และ KEX ดร็อปพัสดุ Shopee/Flash แพ็คกล่องให้ที่ร้าน ขายกล่องและอุปกรณ์แพ็ค และรับส่งกระเป๋าเดินทางที่สาขาใกล้สนามบินหาดใหญ่</p>
+      <div class="hero-actions">
+        <a class="btn btn-red" href="#locations"><svg class="ico"><use href="#i-pin"/></svg>เลือกสาขาและนำทาง</a>
+        <a class="btn btn-light" href="#services">ดูบริการทั้งหมด</a>
+      </div>
+      <ul class="highlights">
+        <li><svg class="ico"><use href="#i-check"/></svg>2 สาขาในหาดใหญ่</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>3 ขนส่งหลัก</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>แพ็คให้ที่ร้าน</li>
+      </ul>
+    </div>
+    <div class="hero-art">
+      <div class="blob" aria-hidden="true"></div>
+      <div class="parcel">
+        <div class="waybill" role="group" aria-label="สถานะเปิดปิดของทั้งสองสาขา">
+          <div class="wb-head"><span class="wb-logo">EXPRESS</span><span class="wb-code">HDY<br>HAT YAI · SONGKHLA</span></div>
+          <div class="wb-barcode" aria-hidden="true"></div>
+          <div class="wb-no" aria-hidden="true">SEND · DROP · PACK</div>
+          <dl class="wb-rows">
+            <div><dt>FROM</dt><dd>EXPRESS หาดใหญ่</dd></div>
+            <div><dt>VIA</dt><dd>Flash · ไปรษณีย์ไทย · KEX</dd></div>
+            <div><dt>TO</dt><dd>ปลายทางของคุณ</dd></div>
+          </dl>
+          <ul class="wb-status">
+            <li><span class="dot" data-dot="wing56"></span><b>หน้ากองบิน 56</b><span data-status="wing56">09:00–18:00 น.</span></li>
+            <li><span class="dot" data-dot="sena"></span><b>หน้าค่ายเสนาณรงค์</b><span data-status="sena">09:00–19:00 น.</span></li>
+          </ul>
+        </div>
+      </div>
+      <a class="sticker" href="#luggage"><svg class="ico"><use href="#i-suitcase"/></svg><span>ไม่ต้องจ่ายค่าโหลด<br>ส่งกระเป๋าถึงบ้าน</span></a>
+      <span class="stamp" aria-hidden="true">2 BRANCHES</span>
+    </div>
+  </div>
+</section>
+
+<div class="wrap carrier-wrap">
+  <div class="carrier">
+    <span class="carrier-title">บริการขนส่งและดร็อปสินค้า</span>
+    <ul class="carrier-list">
+      <li class="brand flash"><span class="em" aria-hidden="true"><svg class="ico"><use href="#i-bolt"/></svg></span>FLASH</li>
+      <li class="brand post"><span class="em" aria-hidden="true">✉</span>ไปรษณีย์ไทย</li>
+      <li class="brand kex"><span class="em" aria-hidden="true"><svg class="ico"><use href="#i-arrow"/></svg></span>KEX</li>
+      <li class="brand shopee"><span class="em" aria-hidden="true"><svg class="ico"><use href="#i-bag"/></svg></span>Shopee</li>
+    </ul>
+  </div>
+  <p class="smallnote">ชื่อแบรนด์แสดงเป็นข้อความประกอบ ไม่ใช่โลโก้ทางการ และไม่ได้แสดงถึงการรับรองจากเจ้าของแบรนด์</p>
+</div>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-heading">
+      <span class="kicker">SERVICES</span>
+      <h2>บริการครบเรื่องพัสดุ <span class="accent">ในที่เดียว</span></h2>
+      <p>กดเลือกประเภทเพื่อกรองดูบริการ</p>
+    </div>
+    <div class="filterbar" role="group" aria-label="กรองบริการ">
+      <button class="filter" type="button" data-filter="all" aria-pressed="true">ทั้งหมด</button>
+      <button class="filter" type="button" data-filter="shipping" aria-pressed="false">ส่ง · ดร็อป</button>
+      <button class="filter" type="button" data-filter="packing" aria-pressed="false">แพ็ค · อุปกรณ์</button>
+    </div>
+    <div class="service-grid" id="serviceGrid" aria-live="polite">
+      <article class="service" data-category="shipping">
+        <div class="icon"><svg class="ico"><use href="#i-truck"/></svg></div>
+        <h3>ส่งพัสดุ</h3>
+        <p>ส่งผ่านขนส่งหลัก 3 ราย เลือกเจ้าที่เหมาะกับพัสดุและปลายทางของคุณ</p>
+        <span class="tag">Flash · ไปรษณีย์ไทย · KEX</span>
+      </article>
+      <article class="service tone-2" data-category="shipping">
+        <div class="icon"><svg class="ico"><use href="#i-bag"/></svg></div>
+        <h3>ดร็อปสินค้าออนไลน์</h3>
+        <p>จุดดร็อปพัสดุสำหรับร้านค้าออนไลน์ที่ส่งผ่าน Flash และ Shopee</p>
+        <span class="tag">Flash · Shopee</span>
+      </article>
+      <article class="service tone-3" data-category="shipping">
+        <div class="icon"><svg class="ico"><use href="#i-suitcase"/></svg></div>
+        <h3>ส่งกระเป๋าเดินทาง</h3>
+        <p>ไม่ต้องแบกขึ้นเครื่อง ส่งกระเป๋าเป็นพัสดุจากสาขาหน้ากองบิน 56 ใกล้สนามบินหาดใหญ่ แล้วไปรอรับที่บ้าน</p>
+        <a class="tag" href="#luggage">ดูขั้นตอนและสอบถามราคา<svg class="ico"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="service" data-category="packing">
+        <div class="icon"><svg class="ico"><use href="#i-box"/></svg></div>
+        <h3>บริการแพ็คกล่อง</h3>
+        <p>ช่วยแพ็คสินค้า เลือกกล่อง และใส่วัสดุห่อหุ้มให้พร้อมก่อนส่ง</p>
+        <span class="tag">แพ็คให้ที่ร้าน</span>
+      </article>
+      <article class="service tone-2" data-category="packing">
+        <div class="icon"><svg class="ico"><use href="#i-boxes"/></svg></div>
+        <h3>ขายกล่องพัสดุ</h3>
+        <p>มีกล่องหลายขนาดให้เลือกตามลักษณะสินค้าที่จะส่ง</p>
+        <span class="tag">กล่องหลายขนาด</span>
+      </article>
+      <article class="service tone-3" data-category="packing">
+        <div class="icon"><svg class="ico"><use href="#i-tape"/></svg></div>
+        <h3>อุปกรณ์แพ็คสินค้า</h3>
+        <p>เทปกาวและวัสดุแพ็คพัสดุ สำหรับคนที่อยากแพ็คสินค้าเอง</p>
+        <span class="tag">เทปกาว · วัสดุแพ็ค</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section band-sand" id="luggage">
+  <div class="wrap luggage">
+    <div class="intro">
+      <span class="kicker">LUGGAGE · HDY</span>
+      <h2>ไม่ต้องแบกกระเป๋าให้หนัก<br><span class="accent">ไม่ต้องจ่ายค่าโหลดแพงๆ</span></h2>
+      <p class="lug-sub">แค่มาส่งเป็นพัสดุ <span class="nowrap">แล้วไปรอรับที่บ้านได้เลย</span></p>
+      <p class="lug-where"><svg class="ico"><use href="#i-suitcase"/></svg><span><span class="lw-line">ส่งกระเป๋าเดินทางจากสนามบินหาดใหญ่</span><span class="lw-line">ได้ที่ <b>รับส่งพัสดุหน้ากองบิน</b></span></span></p>
+      <div class="actions">
+        <a class="btn btn-red" href="tel:+66982659361"><svg class="ico"><use href="#i-phone"/></svg>โทร 098-265-9361</a>
+        <a class="btn btn-light" href="https://maps.app.goo.gl/YD1Tyn6CwE1GKMyf6?g_st=ic" target="_blank" rel="noopener noreferrer"><svg class="ico"><use href="#i-nav"/></svg>นำทางไปสาขาหน้ากองบิน 56</a>
+      </div>
+      <p class="note">ราคาและระยะเวลาจัดส่งต่างกันตามขนส่งและปลายทาง กรุณาสอบถามก่อนใช้บริการ</p>
+    </div>
+    <ol class="steps" aria-label="ขั้นตอนส่งกระเป๋าเดินทาง">
+      <li><h3>นำกระเป๋ามาที่สาขา</h3><p>สาขาหน้ากองบิน 56 เปิด 09:00–18:00 น.</p></li>
+      <li><h3>แพ็คใส่กล่องให้</h3><p>ร้านช่วยเลือกกล่องและแพ็คกระเป๋าให้พร้อมส่ง</p></li>
+      <li><h3>แจ้งราคาก่อนส่ง</h3><p>ราคาขึ้นกับขนาด น้ำหนัก ปลายทาง และขนส่งที่เลือก</p></li>
+      <li><h3>ส่งถึงปลายทาง</h3><p>เก็บเลขพัสดุไว้เช็คสถานะระหว่างทางได้</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="track">
+  <div class="wrap">
+    <div class="section-heading">
+      <span class="kicker">TRACKING</span>
+      <h2>เช็คพัสดุของท่าน <span class="accent">ได้ตรงนี้</span></h2>
+      <p>กดเลือกขนส่งที่ใช้ส่ง แล้วกรอกเลขพัสดุจากใบเสร็จบนเว็บไซต์ของขนส่งนั้น</p>
+    </div>
+    <div class="track-links">
+      <a class="track-go" href="https://www.flashexpress.co.th/" target="_blank" rel="noopener noreferrer">
+        <span class="tg-em flash" aria-hidden="true"><svg class="ico"><use href="#i-bolt"/></svg></span>
+        <span class="tg-text"><b>Flash Express</b><span>flashexpress.co.th</span></span>
+        <span class="tg-cta">เช็คพัสดุ<svg class="ico"><use href="#i-arrow"/></svg></span>
+      </a>
+      <a class="track-go" href="https://track.thailandpost.co.th/" target="_blank" rel="noopener noreferrer">
+        <span class="tg-em post" aria-hidden="true">✉</span>
+        <span class="tg-text"><b>ไปรษณีย์ไทย</b><span>track.thailandpost.co.th</span></span>
+        <span class="tg-cta">เช็คพัสดุ<svg class="ico"><use href="#i-arrow"/></svg></span>
+      </a>
+      <a class="track-go" href="https://th.kex-express.com/th/track-parcel" target="_blank" rel="noopener noreferrer">
+        <span class="tg-em kex" aria-hidden="true"><svg class="ico"><use href="#i-arrow"/></svg></span>
+        <span class="tg-text"><b>KEX</b><span>th.kex-express.com/th/track-parcel</span></span>
+        <span class="tg-cta">เช็คพัสดุ<svg class="ico"><use href="#i-arrow"/></svg></span>
+      </a>
+    </div>
+    <p class="track-fine">ลิงก์ไปยังเว็บไซต์ทางการของขนส่งแต่ละราย สถานะพัสดุมาจากระบบของขนส่งนั้นโดยตรง</p>
+  </div>
+</section>
+
+<section class="section band-sand" id="locations">
+  <div class="wrap">
+    <div class="section-heading">
+      <span class="kicker">LOCATIONS</span>
+      <h2>เลือกสาขา <span class="accent">EXPRESS</span></h2>
+      <p>ดูรูปหน้าร้านจริงไว้สังเกตตอนมาถึง เช็คเวลาทำการและสถานะเปิดปิดตอนนี้ แล้วกดนำทางด้วย Google Maps</p>
+    </div>
+    <div class="branch-grid">
+      <article class="branch selected" data-card="0">
+        <div class="branch-image">
+          <img src="assets/branch-wing56.jpg" alt="หน้าร้าน EXPRESS สาขาหน้ากองบิน 56 ป้ายรับส่งพัสดุสีเหลืองแดง มีบันไดขึ้นหน้าร้าน" loading="lazy" width="1100" height="1116" style="object-position:center 30%">
+          <span class="branch-tag">BRANCH 01</span>
+        </div>
+        <div class="branch-info">
+          <h3>หน้ากองบิน 56</h3>
+          <p class="branch-area">หาดใหญ่ จังหวัดสงขลา · ใกล้สนามบินหาดใหญ่</p>
+          <div class="branch-meta">
+            <span class="hours"><svg class="ico"><use href="#i-clock"/></svg>09:00–18:00 น.</span>
+            <span class="status" data-status-pill="wing56"><span class="dot"></span><span>เวลาทำการ</span></span>
+          </div>
+          <p class="branch-perk"><svg class="ico"><use href="#i-suitcase"/></svg>รับส่งกระเป๋าเดินทาง แพ็คใส่กล่องให้ที่ร้าน</p>
+          <div class="branch-actions">
+            <a class="btn btn-red wide" href="https://maps.app.goo.gl/YD1Tyn6CwE1GKMyf6?g_st=ic" target="_blank" rel="noopener noreferrer"><svg class="ico"><use href="#i-nav"/></svg>นำทางด้วย Google Maps</a>
+            <a class="btn btn-light" href="https://lin.ee/ppyElrq" target="_blank" rel="noopener noreferrer">LINE Official</a>
+            <a class="btn btn-light" href="https://www.facebook.com/share/19qYRmnnFC/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook สาขา 1</a>
+            <button class="branch-pick wide" type="button" data-branch="0" aria-pressed="true"><svg class="ico"><use href="#i-check"/></svg><span>สาขาที่เลือก</span></button>
+          </div>
+        </div>
+      </article>
+      <article class="branch" data-card="1">
+        <div class="branch-image">
+          <img src="assets/branch-sena.jpg" alt="หน้าร้าน EXPRESS สาขาหน้าค่ายเสนาณรงค์ อาคารสีเหลือง ป้ายรับส่งพัสดุและกล่องพัสดุปลีก-ส่ง" loading="lazy" width="1087" height="1447" style="object-position:center 8%">
+          <span class="branch-tag">BRANCH 02</span>
+        </div>
+        <div class="branch-info">
+          <h3>หน้าค่ายเสนาณรงค์</h3>
+          <p class="branch-area">หาดใหญ่ จังหวัดสงขลา</p>
+          <div class="branch-meta">
+            <span class="hours"><svg class="ico"><use href="#i-clock"/></svg>09:00–19:00 น.</span>
+            <span class="status" data-status-pill="sena"><span class="dot"></span><span>เวลาทำการ</span></span>
+          </div>
+          <p class="branch-perk"><svg class="ico"><use href="#i-clock"/></svg>เปิดถึง 1 ทุ่ม สะดวกส่งหลังเลิกงาน</p>
+          <div class="branch-actions">
+            <a class="btn btn-red wide" href="https://maps.app.goo.gl/h5LuZYSoDWpu4mN49?g_st=ic" target="_blank" rel="noopener noreferrer"><svg class="ico"><use href="#i-nav"/></svg>นำทางด้วย Google Maps</a>
+            <a class="btn btn-light" href="https://lin.ee/ppyElrq" target="_blank" rel="noopener noreferrer">LINE Official</a>
+            <a class="btn btn-light" href="https://www.facebook.com/share/19GhujedaA/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook สาขา 2</a>
+            <button class="branch-pick wide" type="button" data-branch="1" aria-pressed="false"><svg class="ico"><use href="#i-check"/></svg><span>เลือกสาขานี้</span></button>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="branch-bottom">
+      <p aria-live="polite">สาขาที่เลือก: <strong id="selectedName">หน้ากองบิน 56</strong></p>
+      <a class="btn btn-dark" id="selectedRoute" data-route="selected" href="https://maps.app.goo.gl/YD1Tyn6CwE1GKMyf6?g_st=ic" target="_blank" rel="noopener noreferrer"><svg class="ico"><use href="#i-nav"/></svg>นำทางไปสาขาที่เลือก</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="reviews">
+  <div class="wrap">
+    <div class="section-heading">
+      <span class="kicker">REVIEWS</span>
+      <h2>รีวิวจากลูกค้า</h2>
+      <p>อ่านความเห็นจากลูกค้าที่ใช้บริการจริง หรือเขียนรีวิวให้เราได้บน Google Maps และ Facebook ของแต่ละสาขา</p>
+    </div>
+    <div class="review-grid">
+      <div class="review-card">
+        <h3>สาขาหน้ากองบิน 56</h3>
+        <div class="row">
+          <a class="btn btn-light" href="https://maps.app.goo.gl/YD1Tyn6CwE1GKMyf6?g_st=ic" target="_blank" rel="noopener noreferrer"><svg class="ico"><use href="#i-star"/></svg>Google Maps</a>
+          <a class="btn btn-light" href="https://www.facebook.com/share/19qYRmnnFC/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </div>
+      </div>
+      <div class="review-card">
+        <h3>สาขาหน้าค่ายเสนาณรงค์</h3>
+        <div class="row">
+          <a class="btn btn-light" href="https://maps.app.goo.gl/h5LuZYSoDWpu4mN49?g_st=ic" target="_blank" rel="noopener noreferrer"><svg class="ico"><use href="#i-star"/></svg>Google Maps</a>
+          <a class="btn btn-light" href="https://www.facebook.com/share/19GhujedaA/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section band-sand" id="faq">
+  <div class="wrap">
+    <div class="section-heading">
+      <span class="kicker">FAQ</span>
+      <h2>คำถามที่พบบ่อย</h2>
+    </div>
+    <div class="faq">
+      <details><summary>ร้าน EXPRESS ส่งผ่านขนส่งเจ้าไหนบ้าง?</summary><p>Flash Express ไปรษณีย์ไทย และ KEX</p></details>
+      <details><summary>ดร็อปพัสดุ Shopee ได้ไหม?</summary><p>ได้ มีบริการดร็อปสินค้าที่ส่งผ่าน Shopee และ Flash ขึ้นอยู่กับเงื่อนไขการส่งและประเภทพัสดุ</p></details>
+      <details><summary>ไม่มีกล่องหรืออุปกรณ์แพ็ค มาส่งได้ไหม?</summary><p>ได้ ร้านมีบริการแพ็คกล่อง ขายกล่องพัสดุ และอุปกรณ์แพ็คสินค้า</p></details>
+      <details><summary>ส่งกระเป๋าเดินทางได้ที่สาขาไหน ราคาเท่าไร?</summary><p>รับที่สาขาหน้ากองบิน 56 ใกล้สนามบินหาดใหญ่ ราคาขึ้นกับขนาด น้ำหนัก ปลายทาง และขนส่งที่เลือก ทัก LINE หรือโทร 098-265-9361 สอบถามราคาก่อนนำกระเป๋ามาได้</p></details>
+      <details><summary>เช็คสถานะพัสดุได้อย่างไร?</summary><p>ใช้เลขพัสดุจากใบเสร็จที่ได้รับตอนส่ง กดเลือกขนส่งในส่วน “เช็คพัสดุของท่าน ได้ตรงนี้” แล้วกรอกเลขบนเว็บไซต์ของขนส่งนั้น</p></details>
+      <details><summary>ติดต่อร้านได้ทางไหนบ้าง?</summary><p>โทร 098-265-9361 ทักแชท LINE Official หรือทักเพจ Facebook ของแต่ละสาขา ดูทุกช่องทางได้ที่ส่วน “ติดต่อ EXPRESS” ท้ายหน้า</p></details>
+      <details><summary>ทั้งสองสาขาเปิดกี่โมง?</summary><p>หน้ากองบิน 56 เปิด 09:00–18:00 น. และหน้าค่ายเสนาณรงค์ เปิด 09:00–19:00 น.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="section-heading">
+      <span class="kicker">CONTACT</span>
+      <h2>ติดต่อ <span class="accent">EXPRESS</span></h2>
+      <p>โทร ทักแชท หรือทักเพจ เพื่อสอบถามราคาและบริการได้ทุกช่องทาง</p>
+    </div>
+    <div class="contact-grid">
+      <div class="phone-card">
+        <span class="phone-label"><svg class="ico"><use href="#i-phone"/></svg>โทรหาร้าน</span>
+        <a class="phone-number" id="phoneNumber" href="tel:+66982659361">098-265-9361</a>
+        <p class="phone-hours">โทรได้ในเวลาทำการ<br>หน้ากองบิน 56 · 09:00–18:00 น.<br>หน้าค่ายเสนาณรงค์ · 09:00–19:00 น.</p>
+        <div class="phone-actions">
+          <a class="btn btn-yellow" href="tel:+66982659361"><svg class="ico"><use href="#i-phone"/></svg>โทรเลย</a>
+          <button class="btn btn-ghost" id="copyPhone" type="button"><svg class="ico"><use href="#i-copy"/></svg>คัดลอกเบอร์</button>
+        </div>
+        <p class="phone-msg" id="phoneMsg" role="status" aria-live="polite"></p>
+      </div>
+      <ul class="channels" aria-label="ช่องทางติดต่ออื่น">
+        <li><a class="channel" href="https://lin.ee/ppyElrq" target="_blank" rel="noopener noreferrer">
+          <span class="ch-icon line"><svg class="ico"><use href="#i-chat"/></svg></span>
+          <span class="ch-text"><b>LINE Official</b><span>ทักแชทสอบถามราคาและบริการ</span></span>
+          <span class="ch-go"><span class="go-txt">เปิด LINE</span><svg class="ico"><use href="#i-arrow"/></svg></span></a></li>
+        <li><a class="channel" href="https://www.facebook.com/share/19qYRmnnFC/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+          <span class="ch-icon fb"><svg class="ico"><use href="#i-users"/></svg></span>
+          <span class="ch-text"><b>Facebook สาขาหน้ากองบิน 56</b><span>เพจสาขา 1 · ใกล้สนามบินหาดใหญ่</span></span>
+          <span class="ch-go"><span class="go-txt">เปิดเพจ</span><svg class="ico"><use href="#i-arrow"/></svg></span></a></li>
+        <li><a class="channel" href="https://www.facebook.com/share/19GhujedaA/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+          <span class="ch-icon fb"><svg class="ico"><use href="#i-users"/></svg></span>
+          <span class="ch-text"><b>Facebook สาขาหน้าค่ายเสนาณรงค์</b><span>เพจสาขา 2</span></span>
+          <span class="ch-go"><span class="go-txt">เปิดเพจ</span><svg class="ico"><use href="#i-arrow"/></svg></span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-layout">
+      <div>
+        <a class="wordmark" href="#home" aria-label="EXPRESS รับส่งพัสดุ หาดใหญ่ กลับด้านบน"><i aria-hidden="true"><svg class="ico"><use href="#i-arrow"/></svg></i><span class="wm-text"><span class="wm-name">EXPRESS</span><span class="wm-sub">รับส่งพัสดุ หาดใหญ่</span></span></a>
+        <p>ส่งพัสดุ • ดร็อปสินค้า • แพ็คกล่อง • จำหน่ายกล่องและอุปกรณ์ • ส่งกระเป๋าเดินทาง<br>2 สาขาในหาดใหญ่ จังหวัดสงขลา</p>
+        <a class="footer-phone" href="tel:+66982659361"><svg class="ico"><use href="#i-phone"/></svg>098-265-9361</a>
+      </div>
+      <div>
+        <h3>เวลาทำการ</h3>
+        <ul>
+          <li>หน้ากองบิน 56 · 09:00–18:00 น.</li>
+          <li>หน้าค่ายเสนาณรงค์ · 09:00–19:00 น.</li>
+        </ul>
+      </div>
+      <nav class="footer-links" aria-label="ลิงก์ท้ายเว็บไซต์">
+        <a href="#services">บริการ</a>
+        <a href="#track">เช็คพัสดุ</a>
+        <a href="#locations">สาขา</a>
+        <a href="#faq">คำถามที่พบบ่อย</a>
+        <a href="#contact">ติดต่อ</a>
+      </nav>
+    </div>
+    <div class="copyright">© <span id="year">2026</span> EXPRESS Parcel Service · หาดใหญ่ สงขลา</div>
+  </div>
+</footer>
+
+<div class="sticky-mobile">
+  <a class="btn btn-light" href="tel:+66982659361"><svg class="ico"><use href="#i-phone"/></svg>โทร</a>
+  <a class="btn btn-red" data-route="selected" href="https://maps.app.goo.gl/YD1Tyn6CwE1GKMyf6?g_st=ic" target="_blank" rel="noopener noreferrer"><svg class="ico"><use href="#i-nav"/></svg>นำทาง</a>
+  <a class="btn btn-dark" href="https://lin.ee/ppyElrq" target="_blank" rel="noopener noreferrer"><svg class="ico"><use href="#i-chat"/></svg>LINE</a>
+</div>
+
+<script>
+(() => {
+  /* ===== ข้อมูลสาขา: แก้เวลา/ลิงก์/วันหยุดที่นี่ที่เดียว =====
+     closedDays: วันหยุดประจำ 0=อาทิตย์ 1=จันทร์ ... 6=เสาร์ เช่น [0] = หยุดวันอาทิตย์ */
+  const BRANCHES = [
+    { id: 'wing56', name: 'หน้ากองบิน 56',      open: '09:00', close: '18:00', closedDays: [], map: 'https://maps.app.goo.gl/YD1Tyn6CwE1GKMyf6?g_st=ic' },
+    { id: 'sena',   name: 'หน้าค่ายเสนาณรงค์', open: '09:00', close: '19:00', closedDays: [], map: 'https://maps.app.goo.gl/h5LuZYSoDWpu4mN49?g_st=ic' }
+  ];
+  const STORE_KEY = 'express.branch';
+  const $ = s => document.querySelector(s);
+  const $$ = s => [...document.querySelectorAll(s)];
+
+  /* ---------- open / closed status (Asia/Bangkok) ---------- */
+  const toMin = t => { const [h, m] = t.split(':').map(Number); return h * 60 + m; };
+  const DAYS = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+  function bangkokNow() {
+    const parts = new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Bangkok', weekday: 'short', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).formatToParts(new Date());
+    const get = t => (parts.find(p => p.type === t) || {}).value;
+    return { day: DAYS[get('weekday')], min: Number(get('hour')) * 60 + Number(get('minute')) };
+  }
+  function statusOf(b, now) {
+    const o = toMin(b.open), c = toMin(b.close);
+    if (b.closedDays.includes(now.day)) return { state: 'closed', text: 'วันนี้หยุดทำการ' };
+    if (now.min < o) return { state: 'closed', text: `ยังไม่เปิด · เปิด ${b.open} น.` };
+    if (now.min >= c) return { state: 'closed', text: `ปิดแล้ว · เปิดอีกครั้ง ${b.open} น.` };
+    if (c - now.min <= 60) return { state: 'soon', text: `ใกล้ปิด · ปิด ${b.close} น.` };
+    return { state: 'open', text: `เปิดอยู่ · ปิด ${b.close} น.` };
+  }
+  function renderStatus() {
+    let now;
+    try { now = bangkokNow(); } catch (e) { return; }
+    BRANCHES.forEach(b => {
+      const s = statusOf(b, now);
+      $$(`[data-status="${b.id}"]`).forEach(el => { el.textContent = s.text; });
+      $$(`[data-dot="${b.id}"]`).forEach(el => { el.dataset.state = s.state; });
+      $$(`[data-status-pill="${b.id}"]`).forEach(el => { el.dataset.state = s.state; el.lastElementChild.textContent = s.text; });
+    });
+  }
+  renderStatus();
+  setInterval(renderStatus, 60 * 1000);
+
+  /* ---------- service filter ---------- */
+  $$('[data-filter]').forEach(btn => btn.addEventListener('click', () => {
+    const type = btn.dataset.filter;
+    $$('[data-filter]').forEach(b => b.setAttribute('aria-pressed', String(b === btn)));
+    $$('[data-category]').forEach(card => { card.hidden = type !== 'all' && card.dataset.category !== type; });
+  }));
+
+  /* ---------- branch selector ---------- */
+  function setBranch(idx, remember) {
+    const b = BRANCHES[idx];
+    if (!b) return;
+    $$('[data-card]').forEach(c => c.classList.toggle('selected', Number(c.dataset.card) === idx));
+    $$('[data-branch]').forEach(btn => {
+      const on = Number(btn.dataset.branch) === idx;
+      btn.setAttribute('aria-pressed', String(on));
+      btn.querySelector('span').textContent = on ? 'สาขาที่เลือก' : 'เลือกสาขานี้';
+    });
+    $('#selectedName').textContent = b.name;
+    $$('[data-selected-name]').forEach(el => { el.textContent = b.name; });
+    $$('[data-route="selected"]').forEach(a => { a.href = b.map; });
+    if (remember) { try { localStorage.setItem(STORE_KEY, String(idx)); } catch (e) {} }
+  }
+  $$('[data-branch]').forEach(btn => btn.addEventListener('click', () => setBranch(Number(btn.dataset.branch), true)));
+  try { const saved = localStorage.getItem(STORE_KEY); if (saved !== null) setBranch(Number(saved), false); } catch (e) {}
+
+  /* ---------- mobile menu ---------- */
+  const nav = $('#navigation'), toggle = $('#menuToggle');
+  function setMenu(open) {
+    nav.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'ปิดเมนู' : 'เปิดเมนู');
+  }
+  toggle.addEventListener('click', () => setMenu(!nav.classList.contains('open')));
+  $$('#navigation a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && nav.classList.contains('open')) { setMenu(false); toggle.focus(); } });
+  document.addEventListener('click', e => { if (nav.classList.contains('open') && !nav.contains(e.target) && !toggle.contains(e.target)) setMenu(false); });
+
+  /* ---------- copy phone number ---------- */
+  const PHONE_DISPLAY = '098-265-9361', PHONE_DIGITS = '0982659361';
+  const phoneMsg = $('#phoneMsg');
+  $('#copyPhone').addEventListener('click', () => {
+    const ok = () => { phoneMsg.textContent = `คัดลอกเบอร์ ${PHONE_DISPLAY} แล้ว`; };
+    const fail = () => {
+      try { const r = document.createRange(); r.selectNodeContents($('#phoneNumber')); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); } catch (e) {}
+      phoneMsg.textContent = 'เลือกเบอร์ไว้ให้แล้ว กดค้างแล้วเลือก "คัดลอก"';
+    };
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(PHONE_DIGITS).then(ok, fail);
+      else fail();
+    } catch (e) { fail(); }
+  });
+
+  $('#year').textContent = new Date().getFullYear();
+  if (!document.documentElement.lang) document.documentElement.lang = 'th';
+})();
+</script>
+</body>
+</html>
